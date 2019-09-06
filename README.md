@@ -1,5 +1,5 @@
 # Python-File-Extension-Script
-For this project I created a Python script that leveraging the OS and Shutil modules to search for all documents with a specific extension within a directory and moves those files to the current working directory.
+For this project I created a Python script that uses the OS and Shutil modules to search for all documents with a specific extension within a directory and moves those files to the current working directory.
 I created  a script called copy_slides.py with a function called pptx_copy.
 The script finds files in ~/Downloads with the file extension .pptx or .ppt
 and then copies these files into the current working directory.
