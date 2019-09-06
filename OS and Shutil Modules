@@ -1,0 +1,18 @@
+#Import Modules
+import os
+import shutil
+#Create the function and define the path
+def pptx_copy():
+    download_directory = os.path.expanduser("~/Downloads")
+    # Give the current directory
+    current_directory = os.getcwd()
+    #Use for loop to go through all of the files in the path
+    for i in os.listdir(download_directory):
+        #Set i as the file path
+        i = os.path.join(download_directory, i)
+        #Find file that contains the suffix "*.pptx" or ".ppt"
+        if i.endswith("*.pptx") or i.endswith(".ppt"):
+            #use shutil module to copy file
+            shutil.copy2(i, current_directory)
+#Call the Function
+pptx_copy()
